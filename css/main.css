@@ -1,11 +1,23 @@
 html {
   box-sizing: border-box;
+  line-height: 1.5;
+  background-color: #f2f1ed;
+  font-family: Georgia, serif;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas:
+  "banner banner"
+  "col1 col2";
+  gap: 1rem;
 }
 
 img {
@@ -15,4 +27,41 @@ img {
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+}
+
+h1 {
+
+}
+
+.logo {
+  width: 14rem;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: end;
+  z-index: 1;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.pano {
+  grid-area: banner;
+}
+
+nav {
+  grid-area: banner;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  font-family: Patua One, sans-serif;
+  color: #fff;
+  font-size: 2rem;
 }
