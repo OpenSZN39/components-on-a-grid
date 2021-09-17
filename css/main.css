@@ -45,6 +45,7 @@ header {
 
 nav {
   grid-area: banner;
+  grid-column: 2;
 }
 
 ul {
@@ -52,7 +53,9 @@ ul {
 }
 
 li {
-  display: inline;
+  display: flex;
+  flex-direction: row;
+flex-wrap: nowrap;
 }
 
 a {
@@ -63,4 +66,12 @@ a {
 
 h2 {
   color: #30658d;
+}
+
+figure {
+  margin: 1rem;
+}
+
+main {
+  display: contents;
 }
