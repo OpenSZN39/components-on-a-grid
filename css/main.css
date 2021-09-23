@@ -50,28 +50,35 @@ nav {
 
 ul {
   list-style-type: none;
+  display: flex;
 }
 
 li {
-  display: flex;
-  flex-direction: row;
-flex-wrap: nowrap;
+  font-family: "Patua One", sans-serif;
+  margin: 1rem;
 }
 
 a {
-  font-family: "Patua One", sans-serif;
   color: #fff;
   font-size: 2rem;
 }
 
 h2 {
   color: #30658d;
+  font-family: "Patua One", sans-serif;
+  margin-bottom: 0;
 }
 
 figure {
-  margin: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 main {
   display: contents;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
